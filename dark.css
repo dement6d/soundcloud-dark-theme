@@ -50,6 +50,7 @@ body {
 }
 
 body.sc-classic,
+.tabs__tabs,
 .fullHero {
     background: var(--bg) !important;
 }
@@ -107,6 +108,7 @@ input[type=search],
 .playControls__control,
 .sc-button-follow:not(.sc-button-selected)::before,
 .sc-ministats-sounds::before,
+.sc-button-group > button:not(.sc-button-selected)::before,
 .volume__speakerIcon {
     filter: brightness(3) !important;
 }
@@ -122,6 +124,7 @@ input[type=search],
 .trackItem.active,
 .clickToPlay.active,
 .clickToPlay:hover,
+.sc-button-group > button:not(.sc-button-selected):hover,
 .compactTrackList__moreLink:hover,
 .topStats__wrapperEligible:hover {
     background-color: var(--bg-selected) !important;
