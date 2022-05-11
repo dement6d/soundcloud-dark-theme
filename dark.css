@@ -107,13 +107,20 @@ input[type=search],
     background-color: var(--border) !important;
 }
 
-.playControls__control,
+button.playControls__control,
+.playControls__control > button:not(.m-all, .m-one),
 .sc-button-follow:not(.sc-button-selected)::before,
 .sc-ministats-sounds::before,
 .sc-button-group > button:not(.sc-button-selected)::before,
 .systemPlaylistDetails__controls > div > button:not(.sc-button-selected)::before,
 .volume__speakerIcon {
     filter: brightness(3) !important;
+}
+
+
+button.playControls__control:hover,
+.playControls__control > button:not(.m-all, .m-one):hover {
+    filter: brightness(5) !important;
 }
 
 .topStatsItemPlaceholder__text:after,
