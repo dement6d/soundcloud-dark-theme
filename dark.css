@@ -396,6 +396,6 @@ button {
     border: none !important;
 }
 
-.sc-button-like.sc-button-secondary.sc-button::before {
+.sc-button-like.sc-button-secondary.sc-button:not(.sc-button-selected)::before {
     filter: invert(1) brightness(0.4) !important;
 }
