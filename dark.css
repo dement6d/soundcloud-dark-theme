@@ -130,6 +130,7 @@ input[type=search],
 
 button.playControls__control,
 .moreActions__group > button::before,
+.headerMenu__link::after,
 .commentItem__controls > button::before,
 .playControls__control > button:not(.m-all, .m-one, .m-shuffling),
 .sc-button-follow:not(.sc-button-selected)::before,
