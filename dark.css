@@ -23,7 +23,8 @@ body {
     background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg) 17px) !important;
 }
 
-body.sc-classic {
+body.sc-classic,
+.fullHero {
     background: var(--bg) !important;
 }
 body {
@@ -58,6 +59,7 @@ input[type=search],
 .topStatsModule__item,
 .sc-button-secondary:not(.sc-button-selected),
 .sc-tag,
+.sc-button,
 .dialog {
     border: 1px solid var(--border) !important;
 }
@@ -84,13 +86,6 @@ input[type=search],
     background-color: rgba(24, 26, 27, 0.8) !important;
 }
 
-
-/* track bg */
-
-.fullHero {
-    background: var(--bg) !important;
-}
-
 /* Comment box */
 
 .commentForm__wrapper {
@@ -109,7 +104,8 @@ input[type=search],
 }
 
 .sc-input,
-.waveform__emptyMessage {
+.waveform__emptyMessage,
+.sc-text {
     color: var(--text) !important;
 }
 
@@ -213,6 +209,7 @@ button {
 }
 
 /* borders */
+
 .topStatsItemPlaceholder.listener .topStatsItemPlaceholder__visual,
 .topStatsItemPlaceholder.playlist .topStatsItemPlaceholder__visual,
 .topStatsItemPlaceholder.track .topStatsItemPlaceholder__visual {
