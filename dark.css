@@ -12,23 +12,20 @@
 
 /* scrollbar */
 
-body::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: var(--border);
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: var(--border);
 }
 
-body::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: var(--border);
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--border);
 }
 
-body::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #555;
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #555;
 }
 
 /* BGS */
@@ -46,19 +43,21 @@ body {
 
 .soundBadge__additional,
 .createPlaylistSuggestion__addContainer {
-    background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg) 17px) !important;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), var(--bg) 17px) !important;
 }
 
-.active > .compactTrackListItem__additional,
-*:hover > .compactTrackListItem__additional {
-    background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg-selected) 17px) !important;
+.active>.compactTrackListItem__additional,
+*:hover>.compactTrackListItem__additional {
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), var(--bg-selected) 17px) !important;
 }
+
 body.sc-classic {
     background: var(--bg-bg) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABNgAAABkAQMAAABuPx8iAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAANQTFRFHR4gXKsS7gAAACZJREFUeJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAA+BjzwAAFJrVE2AAAAAElFTkSuQmCC) repeat-y 50% 0 !important;
 }
+
 .tabs__tabs,
 .tabs__headingContainer,
-.RecurlyCheckoutForm__inputColumn > div,
+.RecurlyCheckoutForm__inputColumn>div,
 .RecurlyBillingSummary__container,
 .RecurlyCheckoutFormSection,
 .backgroundGradient__buffer,
@@ -66,6 +65,7 @@ body.sc-classic {
 .fullHero {
     background: var(--bg) !important;
 }
+
 body {
     background-color: var(--bg) !important;
 }
@@ -99,6 +99,11 @@ body {
     background-color: unset !important;
 }
 
+@media (min-width: 960px) {
+    .Layout_MainSection__3PvQn {
+        background-color: var(--bg) !important;
+    }
+}
 .volume__sliderWrapper::before,
 .volume__sliderWrapper::after {
     border-color: transparent transparent var(--border) var(--border) !important;
@@ -134,21 +139,21 @@ input[type=search],
 }
 
 button.playControls__control:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active),
-.moreActions__group > button::before,
+.moreActions__group>button::before,
 .headerMenu__link::after,
-.commentItem__controls > button::before,
-.playControls__control > button:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active),
+.commentItem__controls>button::before,
+.playControls__control>button:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active),
 .sc-button-follow:not(.sc-button-selected)::before,
 .sc-ministats-sounds::before,
-.sc-button-group > button:not(.sc-button-selected, .sc-button-active)::before,
-.systemPlaylistDetails__controls > div > button:not(.sc-button-selected)::before,
+.sc-button-group>button:not(.sc-button-selected, .sc-button-active)::before,
+.systemPlaylistDetails__controls>div>button:not(.sc-button-selected)::before,
 .volume__speakerIcon {
     filter: brightness(3) !important;
 }
 
 
 button.playControls__control:not(.sc-button-selected, .m-shuffling, .sc-button-active):hover,
-.playControls__control > button:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active):hover {
+.playControls__control>button:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active):hover {
     filter: brightness(5) !important;
 }
 
@@ -163,9 +168,9 @@ button.playControls__control:not(.sc-button-selected, .m-shuffling, .sc-button-a
 .trackItem.active,
 .clickToPlay.active,
 .clickToPlay:hover,
-.sc-button-group > button:not(.sc-button-selected):hover,
+.sc-button-group>button:not(.sc-button-selected):hover,
 .Button.m-secondary:not(.m-currentPlan):hover,
-.systemPlaylistDetails__controls > div > button:hover,
+.systemPlaylistDetails__controls>div>button:hover,
 .compactTrackList__moreLink:hover,
 .inboxItem.active,
 .inboxItem:hover,
@@ -184,6 +189,7 @@ button.playControls__control:not(.sc-button-selected, .m-shuffling, .sc-button-a
     background-color: var(--bg) !important;
     border: unset !important;
 }
+
 .commentForm__input,
 .PageContainer__subwindow,
 .CreatorRecurlyPage,
@@ -194,6 +200,10 @@ input[type=text],
 input[type=search] {
     background: var(--bg) !important;
     color: var(--text) !important;
+}
+
+.stats__xAxis > .tick > text {
+    fill: var(--text) !important;
 }
 
 /* input */
@@ -237,9 +247,10 @@ input[type=search] {
 .sc-tag:hover {
     background: var(--bg-selected) !important;
 }
+
 .truncatedUserDescription__wrapper::after,
 .truncatedAudioInfo__wrapper::after {
-    background: linear-gradient(hsla(0,0%,100%,0),rgba(29, 30, 32, 0.5) 90%,var(--bg)) !important;
+    background: linear-gradient(hsla(0, 0%, 100%, 0), rgba(29, 30, 32, 0.5) 90%, var(--bg)) !important;
 }
 
 /* Links */
@@ -247,6 +258,7 @@ input[type=search] {
 .headerMenu__link {
     color: var(--link-text) !important;
 }
+
 .headerMenu__link:hover {
     color: var(--link-text-hovered) !important;
 }
@@ -265,10 +277,13 @@ a {
     color: var(--link-text) !important;
 }
 
-.sc-classic .playbackSoundBadge__titleLink, .sc-classic .playbackSoundBadge__titleLink:visited {
+.sc-classic .playbackSoundBadge__titleLink,
+.sc-classic .playbackSoundBadge__titleLink:visited {
     color: var(--link-text-dark) !important;
 }
-.sc-classic .playbackSoundBadge__titleLink, .sc-classic .playbackSoundBadge__titleLink:visited:hover {
+
+.sc-classic .playbackSoundBadge__titleLink,
+.sc-classic .playbackSoundBadge__titleLink:visited:hover {
     color: var(--link-text-hovered) !important;
 }
 
@@ -287,19 +302,24 @@ a {
 button {
     color: var(--link-text) !important;
 }
+
 .sc-button-secondary:not(.sc-button-selected) {
     background-color: var(--bg) !important;
 }
+
 .sc-button-secondary {
     background-color: var(--bg) !important;
 }
+
 .sc-button-follow {
     background-color: var(--bg) !important;
 }
+
 .sc-button {
     color: var(--text) !important;
     background-color: var(--bg) !important;
 }
+
 .sc-button:hover {
     color: var(--text) !important;
 }
@@ -315,16 +335,22 @@ button {
     background-color: var(--bg-play-controls) !important;
     border-top: 1px solid var(--border) !important;
 }
+
 .playControls__elements {
     background-color: var(--bg-play-controls) !important;
     border-top: 1px unset !important;
 }
+
 .playControls__bg {
     border-top: 1px solid var(--border) !important;
     background-color: var(--bg-play-controls) !important;
 }
 
 /* borders */
+
+.statsBarChart__bottom {
+    stroke: var(--border) !important;
+}
 
 .topStatsItemPlaceholder.listener .topStatsItemPlaceholder__visual,
 .topStatsItemPlaceholder.playlist .topStatsItemPlaceholder__visual,
@@ -335,6 +361,7 @@ button {
 .image__whiteOutline .image__full {
     border: 2px solid var(--border) !important;
 }
+
 .l-about-rows,
 .ProLandingPage__bestValueRibbon.m-ghost,
 .ProLandingPage__stickyHeadersContainer,
@@ -342,6 +369,7 @@ button {
 .sc-border-light-right {
     border-right: 1px solid var(--border) !important;
 }
+
 .sc-classic .mixedSelectionModule,
 .sc-border-light-bottom,
 .tabs__heading,
@@ -356,6 +384,7 @@ button {
 .sc-classic .searchTitle__text {
     border-bottom: 1px solid var(--border) !important;
 }
+
 .FeaturesGrid__cell+.FeaturesGrid__cell,
 .FeaturesGrid__headerCell+.FeaturesGrid__headerCell,
 .ProLandingPage__stickyHeadersContainer,
@@ -363,12 +392,15 @@ button {
 .ProLandingPage__bestValueRibbon.m-ghost {
     border-left: 1px solid var(--border) !important;
 }
+
 .Footer__links,
 .CollapsingFeatureList,
 .ProLandingPage__bestValueRibbon.m-ghost,
+.sc-border-dark-top,
 .sc-border-light-top {
     border-top: 1px solid var(--border) !important;
 }
+
 .sc-border-light-top::before {
     display: none !important;
 }
@@ -378,6 +410,7 @@ button {
 .g-form-section-head {
     border-bottom: 1px solid var(--border) !important;
 }
+
 .g-tabs {
     border-bottom: 1px solid var(--border) !important;
 }
@@ -386,6 +419,7 @@ button {
 .g-nav-item>.g-nav-link {
     color: var(--link-text) !important;
 }
+
 .g-tabs-link:not(.active):hover,
 .g-nav-item>.g-nav-link:hover {
     color: var(--link-text-hovered) !important;
@@ -394,10 +428,14 @@ button {
 .conversation__actions {
     box-shadow: 0 1px 0 var(--border) !important;
 }
+
 .conversation__form,
 .inbox {
     border: none !important;
 }
+
+/* fix black icons */
+
 .c-button-like:not(.sc-button-selected)::before,
 .sc-button-like.sc-button-secondary.sc-button:not(.sc-button-selected)::before {
     filter: invert(1) brightness(0.4) !important;
@@ -410,14 +448,17 @@ button {
 }
 
 /* logo */
+
 .header__logo {
-    background: linear-gradient(rgb(59, 63, 70),rgb(35, 37, 41)) !important;
+    background: linear-gradient(rgb(59, 63, 70), rgb(35, 37, 41)) !important;
 }
 
 /* waveform */
+
 .waveform.loaded {
     opacity: 0.5 !important;
 }
+
 .waveform.loaded.playing {
     opacity: 0.85 !important;
 }
