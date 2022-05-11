@@ -413,3 +413,11 @@ button {
 .header__logo {
     background: linear-gradient(rgb(59, 63, 70),rgb(35, 37, 41)) !important;
 }
+
+/* waveform */
+.waveform.loaded {
+    opacity: 0.5 !important;
+}
+.waveform.loaded.playing {
+    opacity: 0.8 !important;
+}
