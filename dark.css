@@ -251,6 +251,7 @@ input[type=search] {
     color: var(--link-text-hovered) !important;
 }
 
+.uploadButton__title:hover,
 .sc-truncate:not(.playableTile__usernameHeading):hover,
 a:hover {
     color: var(--link-text-hovered) !important;
