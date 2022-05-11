@@ -62,6 +62,7 @@ body.sc-classic {
 .RecurlyBillingSummary__container,
 .RecurlyCheckoutFormSection,
 .backgroundGradient__buffer,
+.listenContent__inner,
 .fullHero {
     background: var(--bg) !important;
 }
