@@ -1,5 +1,6 @@
 :root {
     --border: rgb(38, 40, 44);
+    --bg-bg: rgb(21, 22, 24);
     --bg: rgb(29, 30, 32);
     --bg-selected: rgb(53, 55, 58);
     --bg-play-controls: rgb(38, 40, 43);
@@ -48,8 +49,9 @@ body {
 *:hover > .compactTrackListItem__additional {
     background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg-selected) 17px) !important;
 }
-
-body.sc-classic,
+body.sc-classic {
+    background: var(--bg-bg) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABNgAAABkAQMAAABuPx8iAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAANQTFRFHR4gXKsS7gAAACZJREFUeJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAA+BjzwAAFJrVE2AAAAAElFTkSuQmCC) repeat-y 50% 0 !important;
+}
 .tabs__tabs,
 .fullHero {
     background: var(--bg) !important;
