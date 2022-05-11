@@ -6,9 +6,18 @@
     "content_scripts": [
         {
             "matches": [ "*://*.soundcloud.com/*" ],
-            "run_at": "document_end",
+            "run_at": "document_start",
             "css": [ "dark.css" ]
         }
     ],
+    "icons": {
+      "16": "icon/16.png",
+      "32": "icon/32.png",
+      "48": "icon/48.png",
+      "128": "icon/128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
     "action": {}
   }

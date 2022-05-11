@@ -9,14 +9,28 @@
     --link-text-hovered: rgb(255, 255, 255);
 }
 
-/* icons */
+/* scrollbar */
 
-/* replace icons with javascript */
-
-.playControl {
-    background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPgoJPHRpdGxlPnBsYXktc3ZnPC90aXRsZT4KCTxzdHlsZT4KCQkuczAgeyBmaWxsOiAjYzVjNWM1IH0gCgk8L3N0eWxlPgoJPHBhdGggaWQ9IkxheWVyIiBjbGFzcz0iczAiIGQ9Im0xOSAxMmwtMTEgN3YtMTR6Ii8+Cjwvc3ZnPg==) no-repeat 55% !important;
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: var(--border);
 }
 
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: var(--border);
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #555;
+}
+
+/* BGS */
 
 body {
     color: var(--text) !important;
@@ -30,6 +44,11 @@ body {
     background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg) 17px) !important;
 }
 
+.active > .compactTrackListItem__additional,
+*:hover > .compactTrackListItem__additional {
+    background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg-selected) 17px) !important;
+}
+
 body.sc-classic,
 .fullHero {
     background: var(--bg) !important;
@@ -37,6 +56,9 @@ body.sc-classic,
 body {
     background-color: var(--bg) !important;
 }
+
+.volume__sliderWrapper::before,
+.volume__sliderWrapper,
 .sc-background-white,
 .sc-background-light,
 .dropbar__content,
@@ -56,6 +78,11 @@ body {
     background-color: unset !important;
 }
 
+.volume__sliderWrapper::before,
+.volume__sliderWrapper::after {
+    border-color: transparent transparent var(--border) var(--border) !important;
+}
+
 input[type=search],
 .headerMenu.m-light,
 .dialog__arrow,
@@ -67,15 +94,23 @@ input[type=search],
 .sc-button-secondary:not(.sc-button-selected),
 .sc-tag,
 .sc-button,
+.volume__sliderWrapper,
 .dialog {
     border: 1px solid var(--border) !important;
 }
 
-.statsOverview__separator {
+.statsOverview__separator,
+.volume__sliderWrapper::before {
     background-color: var(--border) !important;
 }
 
-.sc-classic .volume__sliderWrapper,
+.playControls__control,
+.sc-button-follow:not(.sc-button-selected)::before,
+.sc-ministats-sounds::before,
+.volume__speakerIcon {
+    filter: brightness(3) !important;
+}
+
 .topStatsItemPlaceholder__text:after,
 .topStatsItemPlaceholder__text:before,
 .playbackTimeline__progressBackground,
@@ -85,6 +120,9 @@ input[type=search],
 .sc-button-secondary:hover,
 .trackItem:hover,
 .trackItem.active,
+.clickToPlay.active,
+.clickToPlay:hover,
+.compactTrackList__moreLink:hover,
 .topStats__wrapperEligible:hover {
     background-color: var(--bg-selected) !important;
 }
@@ -112,6 +150,7 @@ input[type=search],
 
 .sc-input,
 .waveform__emptyMessage,
+.compactTrackListItem__trackTitle,
 .sc-text {
     color: var(--text) !important;
 }
