@@ -87,6 +87,7 @@ body {
 .FeaturesGrid__sectionSubheader,
 .PageContainer,
 .dialog,
+.dropdownContent__container,
 .dialog__arrow,
 .Button.m-secondary,
 .l-fixed-top-one-column>.l-top {
@@ -119,6 +120,7 @@ input[type=search],
 .FeaturesGrid__header,
 .FeaturesGrid__section,
 .ProLandingPage__offerContainerCarouselIndicator,
+.dropdownContent__container,
 .dialog {
     border: 1px solid var(--border) !important;
 }
@@ -180,6 +182,7 @@ button.playControls__control:hover,
 .PageContainer__subwindow,
 .CreatorRecurlyPage,
 .FeaturesGrid__cellText,
+.dropdownContent__container::after,
 input[type=text],
 input[type=search] {
     background: var(--bg) !important;
@@ -336,6 +339,9 @@ button {
 .FeaturesGrid__sectionSubheader,
 .FeaturesGrid__sectionHeader,
 .ProLandingPage__stickyBg,
+.dropdownContent__listItem,
+.dropdownContent__header,
+.dropdownContent__main,
 .sc-classic .searchTitle__text {
     border-bottom: 1px solid var(--border) !important;
 }
