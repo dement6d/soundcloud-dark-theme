@@ -61,6 +61,7 @@ body.sc-classic {
 .RecurlyCheckoutForm__inputColumn > div,
 .RecurlyBillingSummary__container,
 .RecurlyCheckoutFormSection,
+.backgroundGradient__buffer,
 .fullHero {
     background: var(--bg) !important;
 }
