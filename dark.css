@@ -341,6 +341,7 @@ button {
 .ProLandingPage__stickyBg,
 .dropdownContent__listItem,
 .dropdownContent__header,
+.headerMenu__list,
 .dropdownContent__main,
 .sc-classic .searchTitle__text {
     border-bottom: 1px solid var(--border) !important;
