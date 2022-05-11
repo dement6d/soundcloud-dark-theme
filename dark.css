@@ -109,6 +109,7 @@ input[type=search],
 .sc-button-follow:not(.sc-button-selected)::before,
 .sc-ministats-sounds::before,
 .sc-button-group > button:not(.sc-button-selected)::before,
+.systemPlaylistDetails__controls > div > button:not(.sc-button-selected)::before,
 .volume__speakerIcon {
     filter: brightness(3) !important;
 }
@@ -125,6 +126,7 @@ input[type=search],
 .clickToPlay.active,
 .clickToPlay:hover,
 .sc-button-group > button:not(.sc-button-selected):hover,
+.systemPlaylistDetails__controls > div > button:hover,
 .compactTrackList__moreLink:hover,
 .topStats__wrapperEligible:hover {
     background-color: var(--bg-selected) !important;
