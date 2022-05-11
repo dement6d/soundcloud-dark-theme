@@ -37,11 +37,15 @@ body {
     color: var(--text) !important;
 }
 
-.header {
+.header,
+.PageHeader.m-uiEvoLight:not(.m-placeholder),
+.ProLandingPage__stickyBg,
+.ProLandingPage__offerContainerCarouselIndicator {
     background-color: var(--bg-play-controls) !important;
 }
 
-.sc-classic .soundBadge__additional {
+.soundBadge__additional,
+.createPlaylistSuggestion__addContainer {
     background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg) 17px) !important;
 }
 
@@ -53,6 +57,10 @@ body.sc-classic {
     background: var(--bg-bg) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABNgAAABkAQMAAABuPx8iAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAANQTFRFHR4gXKsS7gAAACZJREFUeJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAA+BjzwAAFJrVE2AAAAAElFTkSuQmCC) repeat-y 50% 0 !important;
 }
 .tabs__tabs,
+.tabs__headingContainer,
+.RecurlyCheckoutForm__inputColumn > div,
+.RecurlyBillingSummary__container,
+.RecurlyCheckoutFormSection,
 .fullHero {
     background: var(--bg) !important;
 }
@@ -61,6 +69,7 @@ body {
 }
 
 .volume__sliderWrapper::before,
+.PageContainer.m-uiEvoLight,
 .volume__sliderWrapper,
 .sc-background-white,
 .sc-background-light,
@@ -71,8 +80,13 @@ body {
 .g-modal-section,
 .modal__modal,
 .headerMenu.m-light,
+.FeaturesGrid__cell,
+.FeaturesGrid__sectionHeader,
+.FeaturesGrid__sectionSubheader,
+.PageContainer,
 .dialog,
 .dialog__arrow,
+.Button.m-secondary,
 .l-fixed-top-one-column>.l-top {
     background-color: var(--bg) !important;
 }
@@ -98,6 +112,11 @@ input[type=search],
 .sc-tag,
 .sc-button,
 .volume__sliderWrapper,
+.sc-border-box,
+.OfferBox,
+.FeaturesGrid__header,
+.FeaturesGrid__section,
+.ProLandingPage__offerContainerCarouselIndicator,
 .dialog {
     border: 1px solid var(--border) !important;
 }
@@ -108,10 +127,12 @@ input[type=search],
 }
 
 button.playControls__control,
+.moreActions__group > button::before,
+.commentItem__controls > button::before,
 .playControls__control > button:not(.m-all, .m-one),
 .sc-button-follow:not(.sc-button-selected)::before,
 .sc-ministats-sounds::before,
-.sc-button-group > button:not(.sc-button-selected)::before,
+.sc-button-group > button:not(.sc-button-selected, .sc-button-active)::before,
 .systemPlaylistDetails__controls > div > button:not(.sc-button-selected)::before,
 .volume__speakerIcon {
     filter: brightness(3) !important;
@@ -151,7 +172,12 @@ button.playControls__control:hover,
     background-color: var(--bg) !important;
     border: unset !important;
 }
-.commentForm__input, input[type=search] {
+.commentForm__input,
+.PageContainer__subwindow,
+.CreatorRecurlyPage,
+.FeaturesGrid__cellText,
+input[type=text],
+input[type=search] {
     background: var(--bg) !important;
     color: var(--text) !important;
 }
@@ -165,6 +191,16 @@ button.playControls__control:hover,
 .sc-input,
 .waveform__emptyMessage,
 .compactTrackListItem__trackTitle,
+.Price__price,
+.ProLandingPage__companyTitle,
+.ProLandingPage__planTitle,
+.ProLandingPage__planTagline,
+.ProLandingPage__offerContainerCarouselIndicator,
+.FeatureList__text,
+.FeaturesGrid__sectionHeader,
+.FeaturesGrid__sectionSubheader,
+.FeaturesGrid__cell,
+.FeaturesGrid__headerCell,
 .sc-text {
     color: var(--text) !important;
 }
@@ -179,6 +215,11 @@ button.playControls__control:hover,
 .sc-tag {
     background: var(--bg) !important;
 }
+
+.PaymentMethod,
+.BillingCycle,
+.sc-select:hover,
+.ProLandingPage__bestValueRibbon.m-ghost,
 .sc-tag:hover {
     background: var(--bg-selected) !important;
 }
@@ -215,6 +256,7 @@ a.sc-link-light {
     color: var(--link-text-hovered) !important;
 }
 
+.RecurlyCheckoutFormSection__title.m-enabled,
 .playbackTimeline__duration {
     color: var(--text) !important;
 }
@@ -252,9 +294,6 @@ button {
     color: var(--text) !important;
     background: var(--bg) !important;
 }
-.sc-select:hover {
-    background: var(--bg-selected) !important;
-}
 
 .playControls__inner {
     background-color: var(--bg-play-controls) !important;
@@ -281,14 +320,31 @@ button {
     border: 2px solid var(--border) !important;
 }
 .l-about-rows,
+.ProLandingPage__bestValueRibbon.m-ghost,
+.ProLandingPage__stickyHeadersContainer,
 .sc-border-light-right {
     border-right: 1px solid var(--border) !important;
 }
 .sc-classic .mixedSelectionModule,
 .sc-border-light-bottom,
+.tabs__heading,
+.FeaturesGrid__row,
+.FeaturesGrid__sectionSubheader,
+.FeaturesGrid__sectionHeader,
+.ProLandingPage__stickyBg,
 .sc-classic .searchTitle__text {
     border-bottom: 1px solid var(--border) !important;
 }
+.FeaturesGrid__cell+.FeaturesGrid__cell,
+.FeaturesGrid__headerCell+.FeaturesGrid__headerCell,
+.ProLandingPage__stickyHeadersContainer,
+.ProLandingPage__stickyHeader+.ProLandingPage__stickyHeader,
+.ProLandingPage__bestValueRibbon.m-ghost {
+    border-left: 1px solid var(--border) !important;
+}
+.Footer__links,
+.CollapsingFeatureList,
+.ProLandingPage__bestValueRibbon.m-ghost,
 .sc-border-light-top {
     border-top: 1px solid var(--border) !important;
 }
