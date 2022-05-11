@@ -5,9 +5,9 @@
     --bg-selected: rgb(53, 55, 58);
     --bg-play-controls: rgb(38, 40, 43);
     --text: rgb(180, 180, 180);
-    --link-text-dark: rgb(210, 210, 210);
+    --link-text-dark: rgb(140, 140, 140);
     --link-text: rgb(240, 240, 240);
-    --link-text-hovered: rgb(255, 255, 255);
+    --link-text-hovered: rgb(255, 121, 59);
 }
 
 /* scrollbar */
@@ -133,11 +133,11 @@ input[type=search],
     background-color: var(--border) !important;
 }
 
-button.playControls__control,
+button.playControls__control:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active),
 .moreActions__group > button::before,
 .headerMenu__link::after,
 .commentItem__controls > button::before,
-.playControls__control > button:not(.m-all, .m-one, .m-shuffling),
+.playControls__control > button:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active),
 .sc-button-follow:not(.sc-button-selected)::before,
 .sc-ministats-sounds::before,
 .sc-button-group > button:not(.sc-button-selected, .sc-button-active)::before,
@@ -147,8 +147,8 @@ button.playControls__control,
 }
 
 
-button.playControls__control:hover,
-.playControls__control > button:not(.m-all, .m-one):hover {
+button.playControls__control:not(.sc-button-selected, .m-shuffling, .sc-button-active):hover,
+.playControls__control > button:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active):hover {
     filter: brightness(5) !important;
 }
 
@@ -251,6 +251,7 @@ input[type=search] {
     color: var(--link-text-hovered) !important;
 }
 
+.sc-truncate:not(.playableTile__usernameHeading):hover,
 a:hover {
     color: var(--link-text-hovered) !important;
 }
@@ -259,7 +260,7 @@ a.sc-link-dark {
     color: var(--link-text-dark) !important;
 }
 
-a.sc-link-light {
+a {
     color: var(--link-text) !important;
 }
 
@@ -396,9 +397,15 @@ button {
 .inbox {
     border: none !important;
 }
-
+.c-button-like:not(.sc-button-selected)::before,
 .sc-button-like.sc-button-secondary.sc-button:not(.sc-button-selected)::before {
     filter: invert(1) brightness(0.4) !important;
+}
+
+
+.sc-buylink-itunes::before,
+.commentItem__replyButton::before {
+    filter: invert(1) !important;
 }
 
 /* logo */

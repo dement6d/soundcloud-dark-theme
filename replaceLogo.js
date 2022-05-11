@@ -1,1 +1,4 @@
-document.querySelector('header[role="banner"]').classList.remove('peace-logo')
+try {
+    document.querySelector('header[role="banner"]').classList.remove('peace-logo')
+}
+catch {}
