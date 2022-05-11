@@ -156,6 +156,7 @@ button.playControls__control:hover,
 .clickToPlay.active,
 .clickToPlay:hover,
 .sc-button-group > button:not(.sc-button-selected):hover,
+.Button.m-secondary:not(.m-currentPlan):hover,
 .systemPlaylistDetails__controls > div > button:hover,
 .compactTrackList__moreLink:hover,
 .topStats__wrapperEligible:hover {
