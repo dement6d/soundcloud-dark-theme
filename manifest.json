@@ -8,6 +8,11 @@
             "matches": [ "*://*.soundcloud.com/*" ],
             "run_at": "document_start",
             "css": [ "dark.css" ]
+        },
+        {
+          "matches": [ "*://*.soundcloud.com/*" ],
+          "run_at": "document_end",
+          "js": [ "replaceLogo.js" ]
         }
     ],
     "icons": {

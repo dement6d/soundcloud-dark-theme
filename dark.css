@@ -336,6 +336,7 @@ button {
 .l-about-rows,
 .ProLandingPage__bestValueRibbon.m-ghost,
 .ProLandingPage__stickyHeadersContainer,
+.header__navMenu>li>a,
 .sc-border-light-right {
     border-right: 1px solid var(--border) !important;
 }
@@ -398,4 +399,9 @@ button {
 
 .sc-button-like.sc-button-secondary.sc-button:not(.sc-button-selected)::before {
     filter: invert(1) brightness(0.4) !important;
+}
+
+/* logo */
+.header__logo {
+    background: linear-gradient(rgb(59, 63, 70),rgb(35, 37, 41)) !important;
 }
