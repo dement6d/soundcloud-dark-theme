@@ -164,6 +164,7 @@ button.playControls__control:hover,
 .Button.m-secondary:not(.m-currentPlan):hover,
 .systemPlaylistDetails__controls > div > button:hover,
 .compactTrackList__moreLink:hover,
+.sc-button:not(.sc-button-selected):hover,
 .topStats__wrapperEligible:hover {
     background-color: var(--bg-selected) !important;
 }
