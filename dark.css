@@ -182,6 +182,7 @@ button.playControls__control:hover,
 .sc-tag:hover {
     background: var(--bg-selected) !important;
 }
+.truncatedUserDescription__wrapper::after,
 .truncatedAudioInfo__wrapper::after {
     background: linear-gradient(hsla(0,0%,100%,0),rgba(29, 30, 32, 0.5) 90%,var(--bg)) !important;
 }
