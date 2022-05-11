@@ -395,3 +395,7 @@ button {
 .inbox {
     border: none !important;
 }
+
+.sc-button-like.sc-button-secondary.sc-button::before {
+    filter: invert(1) brightness(0.4) !important;
+}
