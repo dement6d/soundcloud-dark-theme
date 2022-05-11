@@ -1,0 +1,283 @@
+:root {
+    --border: rgb(38, 40, 44);
+    --bg: rgb(29, 30, 32);
+    --bg-selected: rgb(53, 55, 58);
+    --bg-play-controls: rgb(38, 40, 43);
+    --text: rgb(180, 180, 180);
+    --link-text-dark: rgb(210, 210, 210);
+    --link-text: rgb(240, 240, 240);
+    --link-text-hovered: rgb(255, 255, 255);
+}
+
+/* backgrounds */
+
+body {
+    color: var(--text) !important;
+}
+
+body.sc-classic {
+    background: var(--bg) !important;
+}
+
+.header {
+    background-color: var(--bg-play-controls) !important;
+}
+
+.topStats__wrapperEligible:hover {
+    background-color: var(--bg-selected) !important;
+}
+
+.sc-classic .soundBadge__additional {
+    background: linear-gradient(90deg,hsla(0,0%,100%,0),var(--bg) 17px) !important;
+}
+
+.dropbar__content {
+    background-color: var(--bg) !important;
+}
+.sc-background-light {
+    background-color: var(--bg) !important;
+}
+.sc-background-white {
+    background-color: var(--bg) !important;
+}
+
+.sound__soundActions {
+    background-color: unset !important;
+}
+
+.sc-classic .l-fixed-top-one-column>.l-top {
+    background: var(--bg) !important;
+}
+
+.headerMenu.m-light {
+    background-color: var(--bg) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.statsOverview__separator {
+    background-color: var(--border) !important;
+}
+
+.topStatsItemPlaceholder__text:after, .topStatsItemPlaceholder__text:before {
+    background-color: var(--bg-selected) !important;
+}
+
+.sc-classic .g-modal-section {
+    background: var(--bg) !important;
+}
+.sc-classic .modal__modal {
+    background: var(--bg) !important;
+}
+.sc-classic .modal.modalWhiteout {
+    background-color: rgba(24, 26, 27, 0.8) !important;
+}
+
+/* Playback progress */
+
+.playbackTimeline__progressBackground {
+    background-color: var(--bg-selected) !important;
+}
+
+
+/* dialog popup */
+
+.dialog {
+    background-color: var(--bg) !important;
+    border: 1px solid var(--border) !important;
+}
+
+/* track bg */
+
+.fullHero {
+    background: var(--bg) !important;
+}
+
+/* Comment box */
+
+.commentForm__wrapper {
+    background-color: var(--bg) !important;
+    border: unset !important;
+}
+.commentForm__input {
+    background: var(--bg) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+
+/* input */
+
+.sc-input {
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+
+/* Selected song in playlist */
+
+.trackItem:hover {
+    background-color: var(--bg-selected) !important;
+}
+.trackItem.active {
+    background-color: var(--bg-selected) !important;
+}
+.trackItem__additional {
+    background: unset !important;
+}
+
+/* Tags */
+.sc-tag {
+    background: var(--bg) !important;
+    border: 1px solid var(--border) !important;
+}
+.sc-tag:hover {
+    background: var(--bg-selected) !important;
+}
+.truncatedAudioInfo__wrapper::after {
+    background: linear-gradient(hsla(0,0%,100%,0),rgba(29, 30, 32, 0.5) 90%,var(--bg)) !important;
+}
+
+/* Links */
+
+.headerMenu__link {
+    color: var(--link-text) !important;
+}
+.headerMenu__link:hover {
+    color: var(--link-text-hovered) !important;
+    background-color: var(--bg-selected) !important;
+}
+
+a:hover {
+    color: var(--link-text-hovered) !important;
+}
+
+a.sc-link-dark {
+    color: var(--link-text-dark) !important;
+}
+
+a.sc-link-light {
+    color: var(--link-text) !important;
+}
+
+.sc-classic .playbackSoundBadge__titleLink, .sc-classic .playbackSoundBadge__titleLink:visited {
+    color: var(--link-text-dark) !important;
+}
+.sc-classic .playbackSoundBadge__titleLink, .sc-classic .playbackSoundBadge__titleLink:visited:hover {
+    color: var(--link-text-hovered) !important;
+}
+
+.playbackTimeline__duration {
+    color: var(--text) !important;
+}
+
+.listenEngagement {
+    border: unset !important;
+    box-shadow: 0 1px 0 0 var(--border) !important;
+}
+
+/* buttons */
+
+button {
+    color: var(--link-text) !important;
+}
+.sc-button-secondary:not(.sc-button-selected) {
+    background-color: var(--bg) !important;
+    border: 1px solid var(--border) !important;
+}
+.sc-button-secondary {
+    background-color: var(--bg) !important;
+}
+.sc-button-secondary:hover {
+    background-color: var(--bg-selected) !important;
+}
+.sc-button-follow {
+    background-color: var(--bg) !important;
+}
+.sc-button-follow:hover {
+    background-color: var(--bg-selected) !important;
+}
+.sc-button {
+    color: var(--text) !important;
+    background-color: var(--bg) !important;
+}
+.sc-button:hover {
+    color: var(--text) !important;
+    background-color: var(--bg-selected) !important;
+}
+
+/* select */
+
+.sc-select {
+    color: var(--text) !important;
+    background: var(--bg) !important;
+}
+.sc-select:hover {
+    background: var(--bg-selected) !important;
+}
+
+.playControls__inner {
+    background-color: var(--bg-play-controls) !important;
+    border-top: 1px solid var(--border) !important;
+}
+.playControls__elements {
+    background-color: var(--bg-play-controls) !important;
+    border-top: 1px unset !important;
+}
+.playControls__bg {
+    border-top: 1px solid var(--border) !important;
+    background-color: var(--bg-play-controls) !important;
+}
+
+/* borders */
+.topStatsItemPlaceholder.playlist .topStatsItemPlaceholder__visual, .topStatsItemPlaceholder.track .topStatsItemPlaceholder__visual {
+    border: 1px solid var(--bg-selected) !important;
+}
+.topStatsItemPlaceholder.listener .topStatsItemPlaceholder__visual {
+    border: 1px solid var(--bg-selected) !important;
+}
+
+.sc-border-dark {
+    border: 1px solid var(--border) !important;
+}
+
+.topStatsModule__item {
+    border: solid var(--border) !important;
+}
+
+.image__whiteOutline .image__full {
+    border: 2px solid var(--border) !important;
+}
+
+.l-about-rows {
+    border-right: 1px solid var(--border) !important;
+}
+
+.sc-classic .mixedSelectionModule {
+    border-bottom: 1px solid var(--border) !important;
+}
+.sc-border-light-bottom {
+    border-bottom: 1px solid var(--border) !important;
+}
+.sc-border-light-top {
+    border-top: 1px solid var(--border) !important;
+}
+.sc-border-light-right {
+    border-right: 1px solid var(--border) !important;
+}
+.sc-border-light-top::before {
+    display: none !important;
+}
+
+/* settings */
+
+.g-form-section-head {
+    border-bottom: 1px solid var(--border) !important;
+}
+.g-tabs {
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.g-tabs-link:not(.active) {
+    color: var(--link-text) !important;
+}
+.g-tabs-link:not(.active):hover {
+    color: var(--link-text-hovered) !important;
+}

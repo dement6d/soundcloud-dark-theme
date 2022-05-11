@@ -1,0 +1,14 @@
+{
+    "name": "Soundcloud Dark Theme",
+    "description": "Eye pleasing dark theme for SoundCloud",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [ "*://*.soundcloud.com/*" ],
+            "run_at": "document_end",
+            "css": [ "dark.css" ]
+        }
+    ],
+    "action": {}
+  }
