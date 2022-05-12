@@ -184,6 +184,7 @@ button.playControls__control:not(.sc-button-selected, .m-shuffling, .sc-button-a
 .compactTrackList__moreLink:hover,
 .inboxItem.active,
 .inboxItem:hover,
+.notificationBadge--unread,
 .sc-button:not(.sc-button-selected):hover,
 .topStats__wrapperEligible:hover {
     background-color: var(--bg-selected) !important;
