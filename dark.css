@@ -137,6 +137,7 @@ input[type=search],
 .dropdownContent__container,
 .uploadMain__foot,
 .composeMessage__bottomWrapper,
+.deleteTrackModal__info,
 .dialog {
     border: 1px solid var(--border) !important;
 }
@@ -412,6 +413,10 @@ button {
 .queueFallback__stationMode,
 .sc-border-light-top {
     border-top: 1px solid var(--border) !important;
+}
+
+.moreActions__group:not(:first-child) {
+    border-top: 5px solid var(--border) !important;
 }
 
 .sc-border-light-top::before {
