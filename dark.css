@@ -62,6 +62,8 @@ body.sc-classic {
 .RecurlyCheckoutFormSection,
 .backgroundGradient__buffer,
 .listenContent__inner,
+.activeUpload__hqNote,
+.quotaMeterWrapper,
 .fullHero {
     background: var(--bg) !important;
 }
@@ -92,7 +94,10 @@ body {
 .Button.m-secondary,
 .sc-input,
 .queue,
+.uploadMain__chooserContainer,
+.uploadMain__foot,
 .queue__itemWrapper,
+.activeUpload__form,
 .queueItemView,
 .l-fixed-top-one-column>.l-top {
     background-color: var(--bg) !important;
@@ -130,6 +135,7 @@ input[type=search],
 .FeaturesGrid__section,
 .ProLandingPage__offerContainerCarouselIndicator,
 .dropdownContent__container,
+.uploadMain__foot,
 .composeMessage__bottomWrapper,
 .dialog {
     border: 1px solid var(--border) !important;
