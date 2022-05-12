@@ -91,6 +91,9 @@ body {
 .dialog__arrow,
 .Button.m-secondary,
 .sc-input,
+.queue,
+.queue__itemWrapper,
+.queueItemView,
 .l-fixed-top-one-column>.l-top {
     background-color: var(--bg) !important;
 }
@@ -139,7 +142,7 @@ input[type=search],
 }
 
 button.playControls__control:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active),
-.moreActions__group>button::before,
+.moreActions__group>button:not([title=Unlike], [title="Unpost / Edit Repost"])::before,
 .headerMenu__link::after,
 .commentItem__controls>button::before,
 .playControls__control>button:not(.m-all, .m-one, .m-shuffling, .sc-button-selected, .sc-button-active),
@@ -196,6 +199,7 @@ button.playControls__control:not(.sc-button-selected, .m-shuffling, .sc-button-a
 .FeaturesGrid__cellText,
 .dropdownContent__container::after,
 .conversation__actions,
+.queue__itemsHeight,
 input[type=text],
 input[type=search] {
     background: var(--bg) !important;
@@ -380,6 +384,7 @@ button {
 .dropdownContent__listItem,
 .dropdownContent__header,
 .headerMenu__list,
+.queue__panel,
 .dropdownContent__main,
 .sc-classic .searchTitle__text {
     border-bottom: 1px solid var(--border) !important;
@@ -397,6 +402,7 @@ button {
 .CollapsingFeatureList,
 .ProLandingPage__bestValueRibbon.m-ghost,
 .sc-border-dark-top,
+.queueFallback__stationMode,
 .sc-border-light-top {
     border-top: 1px solid var(--border) !important;
 }
@@ -437,6 +443,7 @@ button {
 /* fix black icons */
 
 .c-button-like:not(.sc-button-selected)::before,
+.queueItemView__more::before,
 .sc-button-like.sc-button-secondary.sc-button:not(.sc-button-selected)::before {
     filter: invert(1) brightness(0.4) !important;
 }
